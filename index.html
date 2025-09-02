@@ -9,7 +9,7 @@
       content="Clínica e formação em Endodontia: atendimento especializado, tecnologia e cursos (Imersão, Aperfeiçoamento, Especialização e Master)."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="icon" type="image/svg+xml" href="logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="icons/logo.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="text-gray-800 antialiased">
@@ -19,6 +19,13 @@
         class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between"
       >
         <a href="#hero" class="flex items-center gap-2 font-bold">
+          <span class="inline-block h-12 w-12 rounded-full overflow-hidden">
+            <img
+              src="icons/logo.svg"
+              alt="Logo Endoloft"
+              class="h-12 w-12 rounded-full object-cover"
+            />
+          </span>
           <span>Endoloft</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
@@ -129,7 +136,18 @@
     </section>
 
     <!-- ATENDIMENTOS CLÍNICOS -->
-    <section id="clinica" class="py-16 bg-[#344c98] border-y">
+    <section
+      id="clinica"
+      class="py-16 bg-[#344c98] border-y relative overflow-hidden"
+    >
+      <img
+        src="icons/el-verde-1.svg"
+        class="hidden 2xl:block absolute top-1/2 left-10 w-20 h-100 z-0 pointer-events-none"
+      />
+      <img
+        src="icons/el-verde-1.svg"
+        class="hidden 2xl:block absolute top-20 right-10 w-20 h-100 rotate-90 z-0 pointer-events-none"
+      />
       <div class="mx-auto max-w-6xl px-4">
         <h2 class="text-2xl md:text-3xl font-extrabold text-white">
           Atendimentos clínicos
@@ -146,63 +164,64 @@
           >
             Cirurgiões dentistas
           </h2>
+          <div class="mx-auto max-w-6xl px-4">
+            <div class="grid gap-6 sm:grid-cols-2 items-stretch">
+              <!-- Card Dr. Fausto -->
+              <article
+                class="rounded-2xl border bg-white p-8 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full h-full"
+              >
+                <img
+                  src="https://pub-18b48520c65a456ea1a6179aa649dadb.r2.dev/fausto.png"
+                  alt="Foto do Dr. Fausto Victorino"
+                  class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+                />
+                <h3 class="mt-4 text-xl md:text-2xl font-bold leading-tight">
+                  Dr. Fausto Victorino
+                </h3>
+                <span
+                  class="block text-sm md:text-base font-medium text-gray-500"
+                >
+                  CRO 15.427
+                </span>
+                <p
+                  class="mt-3 text-sm md:text-base text-gray-600 leading-relaxed"
+                >
+                  Cirurgião-Dentista (UEM).<br />
+                  Especialista em Endodontia (ABO/AMO).<br />
+                  Mestre em Ciências Farmacêuticas (UEM).<br />
+                  Doutor em Endodontia (FOB/USP).<br />
+                  Diretor Clínico Endoloft; Coordenador de Especialização Endo
+                  Loft/Facop; Consultor técnico-científico Maquira; Membro da
+                  Sociedade Brasileira de Endodontia.
+                </p>
+              </article>
 
-          <div class="flex justify-around justify-items-center">
-            <!-- Card Dr. Fausto -->
-            <article
-              class="rounded-2xl border bg-white p-8 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-72 md:w-80 lg:w-96"
-            >
-              <img
-                src="https://pub-18b48520c65a456ea1a6179aa649dadb.r2.dev/fausto.png"
-                alt="Foto do Dr. Fausto Victorino"
-                class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover shadow-md"
-              />
-              <h3 class="mt-4 text-xl md:text-2xl font-bold leading-tight">
-                Dr. Fausto Victorino
-              </h3>
-              <span
-                class="block text-sm md:text-base font-medium text-gray-500"
+              <!-- Card Dra. Maria -->
+              <article
+                class="rounded-2xl border bg-white p-8 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full h-full"
               >
-                CRO 15.427
-              </span>
-              <p
-                class="mt-3 text-sm md:text-base text-gray-600 leading-relaxed"
-              >
-                Cirurgião-Dentista (UEM).<br />
-                Especialista em Endodontia (ABO/AMO).<br />
-                Mestre em Ciências Farmacêuticas (UEM).<br />
-                Doutor em Endodontia (FOB/USP).<br />
-                Diretor Clínico Endoloft; Coordenador de Especialização Endo
-                Loft/Facop; Consultor técnico-científico Maquira; Membro da
-                Sociedade Brasileira de Endodontia.
-              </p>
-            </article>
-
-            <!-- Card Dra. Maria -->
-            <article
-              class="rounded-2xl border bg-white p-8 shadow hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-72 md:w-80 lg:w-96"
-            >
-              <img
-                src="https://pub-18b48520c65a456ea1a6179aa649dadb.r2.dev/maria.png"
-                alt="Foto da Dra. Maria Luiza Victorino"
-                class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover shadow-md"
-              />
-              <h3 class="mt-4 text-xl md:text-2xl font-bold leading-tight">
-                Dra. Maria Luiza Victorino
-              </h3>
-              <span
-                class="block text-sm md:text-base font-medium text-gray-500"
-              >
-                CRO 38.549
-              </span>
-              <p
-                class="mt-3 text-sm md:text-base text-gray-600 leading-relaxed"
-              >
-                Cirurgiã-Dentista (UEM).<br />
-                Cursando Especialização em Endodontia; Mestranda em Endodontia
-                (FOB/USP).
-              </p>
-            </article>
+                <img
+                  src="https://pub-18b48520c65a456ea1a6179aa649dadb.r2.dev/maria.png"
+                  alt="Foto da Dra. Maria Luiza Victorino"
+                  class="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover shadow-md"
+                />
+                <h3 class="mt-4 text-xl md:text-2xl font-bold leading-tight">
+                  Dra. Maria Luiza Victorino
+                </h3>
+                <span
+                  class="block text-sm md:text-base font-medium text-gray-500"
+                >
+                  CRO 38.549
+                </span>
+                <p
+                  class="mt-3 text-sm md:text-base text-gray-600 leading-relaxed"
+                >
+                  Cirurgiã-Dentista (UEM).<br />
+                  Cursando Especialização em Endodontia; Mestranda em Endodontia
+                  (FOB/USP).
+                </p>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -229,8 +248,8 @@
           </div>
         </div>
 
-        <div class="flex justify-between">
-          <div class="mt-6">
+        <div class="mt-10 flex flex-col md:flex-row justify-between gap-4">
+          <div class="mt-6 md:mt-0">
             <a
               href="https://linktr.ee/endoloftagendamentos"
               target="_blank"
@@ -239,7 +258,7 @@
               Agendar atendimento na clínica
             </a>
           </div>
-          <div class="mt-6">
+          <div class="mt-6 md:mt-0">
             <a
               href="https://api.whatsapp.com/send?phone=554498510805"
               target="_blank"
@@ -253,7 +272,15 @@
     </section>
 
     <!-- CURSOS -->
-    <section id="cursos" class="py-16">
+    <section id="cursos" class="relative py-16 overflow-hidden">
+      <img
+        src="icons/el-azul-1.svg"
+        class="hidden 2xl:block absolute top-10 left-10 w-20 h-60 rotate-90 z-0 pointer-events-none"
+      />
+      <img
+        src="icons/el-azul-2.svg"
+        class="hidden 2xl:block absolute bottom-20 right-16 w-16 h-70 z-0 pointer-events-none"
+      />
       <div class="mx-auto max-w-6xl px-4">
         <h2 class="text-2xl md:text-3xl font-extrabold text-[#344c98]">
           Cursos de Endodontia
@@ -393,7 +420,11 @@
     </section>
 
     <!-- DIFERENCIAIS -->
-    <section id="diferenciais" class="py-16 bg-gray-50 border-y">
+    <section id="diferenciais" class="relative py-16 bg-gray-50 border-y">
+      <img
+        src="icons/el-azul-3.svg"
+        class="hidden 2xl:block absolute bottom-20 left-16 w-28 h-auto z-0 pointer-events-none"
+      />
       <div class="mx-auto max-w-6xl px-4">
         <h2 class="text-2xl md:text-3xl font-extrabold text-[#344c98]">
           Nossos diferenciais
@@ -462,14 +493,17 @@
     </section>
 
     <!-- DEPOIMENTOS (placeholder simples) -->
-    <section id="depoimentos" class="py-16 bg-[#344c98]">
+    <section id="depoimentos" class="py-16 bg-[#344c98] relative">
       <div class="mx-auto max-w-6xl px-4">
         <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-8">
           Experiência dos nossos alunos
         </h2>
-
+        <img
+          src="icons/el-verde-1.svg"
+          class="hidden 2xl:block absolute top-20 right-10 w-20 h-100 z-0 pointer-events-none"
+        />
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- Card 1 -->
+          <!-- Card 1 (OK) -->
           <div
             class="rounded-xl overflow-hidden shadow-lg bg-white group hover:shadow-xl transition-all"
           >
@@ -478,8 +512,10 @@
                 class="absolute inset-0 w-full h-full"
                 src="https://www.youtube.com/embed/nmLNh3w25xs"
                 title="Depoimento 1"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
             <div class="p-4">
@@ -489,22 +525,24 @@
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Card 2 (CORRIGIDO) -->
           <div
             class="rounded-xl overflow-hidden shadow-lg bg-white group hover:shadow-xl transition-all"
           >
             <div class="relative w-full h-48 bg-black">
               <iframe
                 class="absolute inset-0 w-full h-full"
-                src="https://youtu.be/JZx6YNoLYzk"
+                src="https://www.youtube.com/embed/JZx6YNoLYzk"
                 title="Depoimento 2"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
             <div class="p-4">
               <h3 class="text-lg font-semibold text-gray-800">
-                Alunas Paraguai - Aperfeiçoamento
+                Alunas Paraguai - Aperfeiçoamento
               </h3>
             </div>
           </div>
@@ -516,15 +554,14 @@
     <section id="contato" class="relative py-16 border-t h-[500px]">
       <!-- Mapa como background -->
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.5524632795447!2d-51.939175!3d-23.427219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd5e82ff72f3b%3A0x76d55f810ac82119!2sEndo%20Loft!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr"
         class="absolute inset-0 w-full h-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.5524632795447!2d-51.939175!3d-23.427219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd5e82ff72f3b%3A0x76d55f810ac82119!2sEndo%20Loft!5e0!3m2!1spt-BR!2sbr!4v1691234567890!5m2!1spt-BR!2sbr"
         style="border: 0"
         allowfullscreen
         loading="lazy"
-        title="Google"
         referrerpolicy="no-referrer-when-downgrade"
-      >
-      </iframe>
+        title="Mapa Endoloft"
+      ></iframe>
 
       <!-- Overlay escuro para contraste -->
       <div class="absolute inset-0 bg-black/40"></div>
